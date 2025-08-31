@@ -1,0 +1,278 @@
+ body {
+            font-family: Arial;
+            font-weight: 400;
+        }
+
+        .form {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-header {
+            text-align: center; 
+            margin-bottom: 14px; 
+            font-size: 20px;
+        }
+
+        .form-header span:last-child {
+            color: #46A358; 
+            font-weight: bold;
+        }
+
+        .form-header p {
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 400;
+            color: #3D3D3D;
+            margin-right: 60px;
+        }
+
+        .form-group {
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+
+        .form-group input {
+            padding: 10px; 
+            border: 1px solid #EAEAEA; 
+            border-radius: 4px; 
+            width: 340px;
+        }
+        .form-group:nth-child(1) {
+            margin-top: 10px;
+        }
+        .form button {
+            width: 360px;
+            padding: 15px; 
+            background-color: #46A358; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            cursor: pointer;
+        }
+        span:nth-child(3) {
+            color: #46A356;
+            margin-left: 10px;
+        }
+        .span {
+            margin-bottom: 40px;
+        }
+        span:nth-child(1) {
+            color: #3D3D3D;
+            margin-right: 12px;
+        }
+        span:nth-child(2) {
+            color: #3D3D3D;
+        }
+        .checkbox-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .checkbox{
+          position: relative;
+          animation-name: backInLeft;
+          animation-duration: 4s;
+          animation-delay: 0.2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: cubic-bezier( 0.17, 0.74, 0.93, 0.1);
+        }
+
+        .risk{
+          margin-left: 8px;
+          position: relative;
+          cursor: pointer;
+          color: #3D3D3D;
+          animation-name: backInRight;
+          animation-duration: 2s;
+          animation-delay: 0.2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: backwards;
+          animation-timing-function: cubic-bezier( 0.17, 0.74, 0.93, 0.1);
+        }
+        .submit {
+          position: relative;
+          animation-name: backInUp;
+          animation-duration: 2s;
+          animation-delay: 0.2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: cubic-bezier(0.17, 0.74, 0.93, 0.1);
+        }
+        .text {
+          position: relative;
+          animation-name: backOutLeft;
+          animation-duration: 3s;
+          animation-delay: 0.2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-out;
+        }
+        .email {
+          position: relative;
+          animation-name: backOutRight;
+          animation-duration: 3s;
+          animation-delay: 0.2s;
+          animation-iteration-count: 1;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-out;
+        }
+        .password {
+          position: relative;
+          animation-name: backOutUp;
+          animation-duration: 3s;
+          animation-delay: 0.4s;
+          animation-iteration-count: 1;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-out;
+        }
+        .password-1 {
+          position: relative;
+          animation-name: backOutDown;
+          animation-duration: 3s;
+          animation-delay: 0.4s;
+          animation-iteration-count: 1;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-out;
+        }
+  
+        @keyframes backInLeft{
+          0% {
+            left: 0px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+          }
+          50% {
+            left: -300px;
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.2);
+            opacity: 0.5;
+          }
+          100% {
+            left: 0px;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+
+
+
+        @keyframes backInRight{
+          0% {
+            left: 0px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+          50% {
+            left: 300px;
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.2);
+          }
+          100% {
+            left: 0;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        @keyframes backInUp {
+          0% {
+            top: 300px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+          50% {
+            top: 150px;
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.2);
+            opacity: 0.5;
+          }
+          100% {
+            top: 0px;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+          }
+        }
+
+
+
+        @keyframes backOutLeft {
+          0% {
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+          50% {
+            left: 350px;
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.2);
+            opacity: 0.6;
+          }
+          100% {
+            left: 0;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+          }
+        }
+
+        @keyframes backOutRight {
+          0% {
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+         50% {
+            left: -350px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0.6;
+         }
+          100% {
+            left: 0px;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+          }
+        }
+
+
+        @keyframes backOutUp {
+          0% {
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+         50% {
+            left: 350px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0.6;
+         }
+          100% {
+            left: 0px;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+          }
+        }
+
+
+        @keyframes backOutDown {
+          0% {
+            left: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+
+          }
+         50% {
+            left: -350px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            opacity: 0.6;
+         }
+          100% {
+            left: 0px;
+            box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+          }
+        }
